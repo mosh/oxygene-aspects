@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProductVersion>3.5</ProductVersion>
     <DefaultNamespace>IDataErrorInfoWindowsApplication</DefaultNamespace>
-    <OutputType>winexe</OutputType>
+    <OutputType>WinExe</OutputType>
     <AssemblyName>IDataErrorInfoWindowsApplication</AssemblyName>
     <AllowGlobals>False</AllowGlobals>
     <AllowLegacyWith>False</AllowLegacyWith>
@@ -13,10 +13,14 @@
     <ApplicationIcon>Properties\App.ico</ApplicationIcon>
     <ProjectTypeGuids>{89896941-7261-4476-8385-4DA3CE9FDB83};{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{656346D9-4656-40DA-A068-22D5425D4639}</ProjectTypeGuids>
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Name>IDataErrorInfoWindowsApplication</Name>
     <RootNamespace>IDataErrorInfoWindowsApplication</RootNamespace>
     <ProjectGuid>{4ecfb929-b18a-4bc5-857d-fc1d0ca63bcf}</ProjectGuid>
+    <DefaultUses />
+    <StartupClass />
+    <InternalAssemblyName />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <Conditionals>DEBUG;TRACE</Conditionals>
@@ -58,6 +62,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
@@ -71,7 +76,9 @@
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="WPFToolkit" />
+    <Reference Include="WPFToolkit">
+      <HintPath>..\..\..\lib\WPFToolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -99,6 +106,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ValidationDomain\ValidationDomain.oxygene">
+      <Name>ValidationDomain</Name>
+      <Project>{60f1dcf6-2883-490f-9b0c-b1b57f8b895d}</Project>
+      <Private>True</Private>
+      <HintPath>..\ValidationDomain\bin\Debug\ValidationDomain.dll</HintPath>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.Echoes.targets" />
   <PropertyGroup>

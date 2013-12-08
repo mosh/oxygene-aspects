@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProductVersion>3.5</ProductVersion>
     <RootNamespace>ValidationDomain.Tests</RootNamespace>
-    <OutputType>library</OutputType>
+    <OutputType>Library</OutputType>
     <AssemblyName>ValidationDomain.Tests</AssemblyName>
     <AllowGlobals>False</AllowGlobals>
     <AllowLegacyWith>False</AllowLegacyWith>
@@ -11,9 +11,14 @@
     <AllowLegacyCreate>False</AllowLegacyCreate>
     <AllowUnsafeCode>False</AllowUnsafeCode>
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Name>ValidationDomain.Tests</Name>
     <ProjectGuid>{daad5eec-dde8-44f2-8bde-96443020e5fb}</ProjectGuid>
+    <DefaultUses />
+    <StartupClass />
+    <InternalAssemblyName />
+    <ApplicationIcon />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <Optimize>false</Optimize>
@@ -50,35 +55,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="RemObjects.Oxygene.Cirrus">
-      <HintPath>C:\Program Files\CodeGear\Delphi RemObjects.Elements\Reference Assemblies\RemObjects.Oxygene.Cirrus.dll</HintPath>
+      <HintPath>C:\Program Files\RemObjects Software\Oxygene\Echoes\Oxygene Reference Assemblies\RemObjects.Oxygene.Cirrus.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <ProjectReference Include="..\..\RemObjects.Elements.StandardAspects.ValidationAspects\RemObjects.Elements.StandardAspects.ValidationAspects.oxygene">
-      <Name>RemObjects.Elements.StandardAspects.ValidationAspects</Name>
-      <Project>{48ff9846-2900-4156-af0e-1cadea6f2a15}</Project>
-      <Private>True</Private>
-      <IsCirrusRef>True</IsCirrusRef>
-    </ProjectReference>
-    <ProjectReference Include="..\..\RemObjects.Elements.StandardAspects.Validation\RemObjects.Elements.StandardAspects.Validation.oxygene">
-      <Name>RemObjects.Elements.StandardAspects.Validation</Name>
-      <Project>{f806783b-51df-472e-8c66-22e67e494cac}</Project>
-      <Private>True</Private>
-      <HintPath>..\..\RemObjects.Elements.StandardAspects.Validation\bin\Debug\RemObjects.Elements.StandardAspects.Validation.dll</HintPath>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DateTimeHasValueTests.pas" />
@@ -100,6 +85,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RemObjects.Elements.StandardAspects.ValidationAspects\RemObjects.Elements.StandardAspects.ValidationAspects.oxygene">
+      <Name>RemObjects.Elements.StandardAspects.ValidationAspects</Name>
+      <Project>{48ff9846-2900-4156-af0e-1cadea6f2a15}</Project>
+      <Private>True</Private>
+      <IsCirrusRef>True</IsCirrusRef>
+      <HintPath>..\..\RemObjects.Elements.StandardAspects.ValidationAspects\bin\Debug\RemObjects.Elements.StandardAspects.ValidationAspects.dll</HintPath>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RemObjects.Elements.StandardAspects.Validation\RemObjects.Elements.StandardAspects.Validation.oxygene">
+      <Name>RemObjects.Elements.StandardAspects.Validation</Name>
+      <Project>{f806783b-51df-472e-8c66-22e67e494cac}</Project>
+      <Private>True</Private>
+      <HintPath>..\..\RemObjects.Elements.StandardAspects.Validation\bin\Debug\RemObjects.Elements.StandardAspects.Validation.dll</HintPath>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup />
   <PropertyGroup />
