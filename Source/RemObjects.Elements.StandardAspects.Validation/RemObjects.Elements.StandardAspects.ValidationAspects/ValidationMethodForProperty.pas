@@ -98,13 +98,14 @@ end;
 method ValidationMethodForPropertyAttribute.GetValidationMethod (Services: RemObjects.Oxygene.Cirrus.IServices; aProperty: RemObjects.Oxygene.Cirrus.IPropertyDefinition): IMethod;
 begin
   var validationMethod:IMethod;
-
   var methods := aProperty.Owner.GetMethods(self.MethodName);
+  var booleanType := Services.GetType('System.Boolean');
 
   for someMethod:IMethod in methods do
   begin
 
-    if ((someMethod.ParameterCount=0) and (someMethod.Result.Fullname = typeof(System.Boolean).Fullname))then
+
+    if ( (someMethod.ParameterCount=0) and ((assigned(someMethod.result)) and (someMethod.Result.IsAssignableTo(booleanType))))then
     begin
       validationMethod := someMethod;
       break;
@@ -114,7 +115,7 @@ begin
 
   if(not assigned(validationMethod))then
   begin
-    Services.EmitError(string.Format('Unable to find the method {0} with no parameters and a return type of System.Boolean',self.MethodName));
+    Services.EmitError(string.Format('Unable to find the method {0} with no parameters and a return type of Boolean',self.MethodName));
   end;
 
   result:=validationMethod;

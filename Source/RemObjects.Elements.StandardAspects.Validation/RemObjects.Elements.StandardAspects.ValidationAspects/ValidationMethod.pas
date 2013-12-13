@@ -33,11 +33,12 @@ begin
     Services.EmitError('Validation methods must not have parameters');
   end;
 
-  if (string.Compare(aMethod.Result.Fullname,typeof(System.Boolean).Fullname)<>0)then
-  begin
-    Services.EmitError('Validation method must return System.Boolean');
-  end;
+  var booleanType := Services.GetType('System.Boolean');
 
+  if (not((assigned(aMethod.result)) and (aMethod.Result.IsAssignableTo(booleanType))))then
+  begin
+    Services.EmitError('Validation method must return Boolean');
+  end;
 
   // validation failure
 
