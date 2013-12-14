@@ -2,9 +2,9 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
   <PropertyGroup>
     <ProductVersion>3.5</ProductVersion>
-    <RootNamespace>RemObjects.Elements.StandardAspects.EnterpriseLibrary</RootNamespace>
+    <RootNamespace>RemObjects.Elements.StandardAspects.Enterprise.Aspects</RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>RemObjects.Elements.StandardAspects.EnterpriseLibrary</AssemblyName>
+    <AssemblyName>RemObjects.Elements.StandardAspects.Enterprise.Aspects</AssemblyName>
     <AllowGlobals>False</AllowGlobals>
     <AllowLegacyWith>False</AllowLegacyWith>
     <AllowLegacyOutParams>False</AllowLegacyOutParams>
@@ -12,8 +12,12 @@
     <AllowUnsafeCode>False</AllowUnsafeCode>
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <Name>RemObjects.Elements.StandardAspects.EnterpriseLibrary</Name>
-    <ProjectGuid>{5d070e1f-7122-4926-a3b8-20d87f918677}</ProjectGuid>
+    <Name>RemObjects.Elements.StandardAspects.EnterpriseLibrary.Aspects</Name>
+    <ProjectGuid>{30680d6a-4c32-4634-ba49-823ed255e897}</ProjectGuid>
+    <DefaultUses />
+    <StartupClass />
+    <InternalAssemblyName />
+    <ApplicationIcon />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <Optimize>false</Optimize>
@@ -49,33 +53,14 @@
     <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
-      <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling">
-      <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging">
-      <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
-      <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.ServiceLocation">
-      <HintPath>..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>..\..\lib\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity.Interception">
-      <HintPath>..\..\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
-    </Reference>
     <Reference Include="mscorlib" />
+    <Reference Include="RemObjects.Oxygene.Cirrus">
+      <HintPath>C:\Program Files\Embarcadero\Delphi RemObjects.Elements\Bin\RemObjects.Oxygene.Cirrus.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web">
-      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -88,7 +73,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HttpApplicationExtensions.pas" />
+    <Compile Include="Logging.pas" />
+    <Compile Include="LoggingException.pas" />
     <Compile Include="Properties\AssemblyInfo.pas" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

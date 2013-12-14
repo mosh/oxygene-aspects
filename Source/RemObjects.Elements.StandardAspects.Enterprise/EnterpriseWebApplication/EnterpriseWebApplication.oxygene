@@ -22,6 +22,12 @@
     <EnableAsserts>False</EnableAsserts>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RemObjects.Elements.StandardAspects.Enterprise\RemObjects.Elements.StandardAspects.Enterprise.oxygene">
+      <Name>RemObjects.Elements.StandardAspects.Enterprise</Name>
+      <Project>{5d070e1f-7122-4926-a3b8-20d87f918677}</Project>
+      <Private>True</Private>
+      <HintPath>..\RemObjects.Elements.StandardAspects.Enterprise\bin\Debug\RemObjects.Elements.StandardAspects.EnterpriseLibrary.dll</HintPath>
+    </ProjectReference>
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
       <HintPath>..\..\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
     </Reference>
@@ -70,17 +76,12 @@
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <ProjectReference Include="..\RemObjects.Elements.StandardAspects.EnterpriseLibrary.Aspects\RemObjects.Elements.StandardAspects.EnterpriseLibrary.Aspects.oxygene">
-      <Name>RemObjects.Elements.StandardAspects.EnterpriseLibrary.Aspects</Name>
+    <ProjectReference Include="..\RemObjects.Elements.StandardAspects.Enterprise.Aspects\RemObjects.Elements.StandardAspects.Enterprise.Aspects.oxygene">
+      <Name>RemObjects.Elements.StandardAspects.Enterprise.Aspects</Name>
       <Project>{30680d6a-4c32-4634-ba49-823ed255e897}</Project>
       <Private>True</Private>
       <IsCirrusRef>True</IsCirrusRef>
-    </ProjectReference>
-    <ProjectReference Include="..\RemObjects.Elements.StandardAspects.EnterpriseLibrary\RemObjects.Elements.StandardAspects.EnterpriseLibrary.oxygene">
-      <Name>RemObjects.Elements.StandardAspects.EnterpriseLibrary</Name>
-      <Project>{5d070e1f-7122-4926-a3b8-20d87f918677}</Project>
-      <Private>True</Private>
-      <HintPath>..\RemObjects.Elements.StandardAspects.EnterpriseLibrary\bin\Debug\Moshine.EnterpriseLibrary.dll</HintPath>
+      <HintPath>..\RemObjects.Elements.StandardAspects.Enterprise.Aspects\bin\Debug\RemObjects.Elements.StandardAspects.Enterprise.Aspects.dll</HintPath>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -92,8 +93,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.pas">
       <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-      <DesignableClassName>EnterpriseLibraryWebApplication._Default</DesignableClassName>
     </Compile>
     <Content Include="Global.asax" />
     <Compile Include="Global.asax.pas">

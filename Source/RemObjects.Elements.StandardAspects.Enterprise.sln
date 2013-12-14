@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "RemObjects.Elements.StandardAspects.Enterprise.Aspects", "RemObjects.Elements.StandardAspects.Enterprise\RemObjects.Elements.StandardAspects.Enterprise.Aspects\RemObjects.Elements.StandardAspects.Enterprise.Aspects.oxygene", "{30680D6A-4C32-4634-BA49-823ED255E897}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "RemObjects.Elements.StandardAspects.Enterprise", "RemObjects.Elements.StandardAspects.Enterprise\RemObjects.Elements.StandardAspects.Enterprise\RemObjects.Elements.StandardAspects.Enterprise.oxygene", "{5D070E1F-7122-4926-A3B8-20D87F918677}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "EnterpriseWebApplication", "RemObjects.Elements.StandardAspects.Enterprise\EnterpriseWebApplication\EnterpriseWebApplication.oxygene", "{4751D4ED-A8EF-4F09-B434-A5A7B505363A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30680D6A-4C32-4634-BA49-823ED255E897}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{30680D6A-4C32-4634-BA49-823ED255E897}.Debug|Mixed Platforms.Build.0 = Debug
+		{30680D6A-4C32-4634-BA49-823ED255E897}.Release|Mixed Platforms.ActiveCfg = Release
+		{30680D6A-4C32-4634-BA49-823ED255E897}.Release|Mixed Platforms.Build.0 = Release
+		{5D070E1F-7122-4926-A3B8-20D87F918677}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{5D070E1F-7122-4926-A3B8-20D87F918677}.Debug|Mixed Platforms.Build.0 = Debug
+		{5D070E1F-7122-4926-A3B8-20D87F918677}.Release|Mixed Platforms.ActiveCfg = Release
+		{5D070E1F-7122-4926-A3B8-20D87F918677}.Release|Mixed Platforms.Build.0 = Release
+		{4751D4ED-A8EF-4F09-B434-A5A7B505363A}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{4751D4ED-A8EF-4F09-B434-A5A7B505363A}.Debug|Mixed Platforms.Build.0 = Debug
+		{4751D4ED-A8EF-4F09-B434-A5A7B505363A}.Release|Mixed Platforms.ActiveCfg = Release
+		{4751D4ED-A8EF-4F09-B434-A5A7B505363A}.Release|Mixed Platforms.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
