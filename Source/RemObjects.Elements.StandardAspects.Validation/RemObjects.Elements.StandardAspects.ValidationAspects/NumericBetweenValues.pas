@@ -29,7 +29,7 @@ type
 
   end;
 
-  Int32BetweenValuesAttribute = public class(NumericBetweenValuesAttribute<Int32>)
+  Int32BetweenValuesAttribute = public class(NumericBetweenValuesAttribute<Int32>, IBaseAspect)
 
   private
   public
