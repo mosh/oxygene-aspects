@@ -4,12 +4,16 @@
     <ProductVersion>3.5</ProductVersion>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{656346D9-4656-40DA-A068-22D5425D4639}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>EnterpriseLibraryWebApplication</RootNamespace>
-    <AssemblyName>EnterpriseLibraryWebApplication</AssemblyName>
+    <RootNamespace>EnterpriseWebApplication</RootNamespace>
+    <AssemblyName>EnterpriseWebApplication</AssemblyName>
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <Name>EnterpriseLibraryWebApplication</Name>
     <ProjectGuid>{4751d4ed-a8ef-4f09-b434-a5a7b505363a}</ProjectGuid>
+    <DefaultUses />
+    <StartupClass />
+    <InternalAssemblyName />
+    <ApplicationIcon />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DefineConstants>DEBUG;TRACE;</DefineConstants>
@@ -93,6 +97,8 @@
     </Compile>
     <Compile Include="Default.aspx.designer.pas">
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <DesignableClassName>EnterpriseWebApplication._Default</DesignableClassName>
     </Compile>
     <Content Include="Global.asax" />
     <Compile Include="Global.asax.pas">

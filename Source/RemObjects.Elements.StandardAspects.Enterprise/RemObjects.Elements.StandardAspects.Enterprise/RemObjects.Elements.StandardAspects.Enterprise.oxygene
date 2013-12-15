@@ -2,9 +2,9 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
   <PropertyGroup>
     <ProductVersion>3.5</ProductVersion>
-    <RootNamespace>RemObjects.Elements.StandardAspects.EnterpriseLibrary</RootNamespace>
+    <RootNamespace>RemObjects.Elements.StandardAspects.Enterprise</RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>RemObjects.Elements.StandardAspects.EnterpriseLibrary</AssemblyName>
+    <AssemblyName>RemObjects.Elements.StandardAspects.Enterprise</AssemblyName>
     <AllowGlobals>False</AllowGlobals>
     <AllowLegacyWith>False</AllowLegacyWith>
     <AllowLegacyOutParams>False</AllowLegacyOutParams>
@@ -14,6 +14,10 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <Name>RemObjects.Elements.StandardAspects.EnterpriseLibrary</Name>
     <ProjectGuid>{5d070e1f-7122-4926-a3b8-20d87f918677}</ProjectGuid>
+    <DefaultUses />
+    <StartupClass />
+    <InternalAssemblyName />
+    <ApplicationIcon />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <Optimize>false</Optimize>
