@@ -3,7 +3,6 @@
 interface
 
 uses
-  RemObjects.Elements.StandardAspects.DependencyInjection,
   System.Collections.Generic,
   System.Linq;
 
@@ -59,10 +58,10 @@ type
   public
 
 
-    [aspect:PropertyDependencyInjector]
+    [aspect:RemObjects.Elements.StandardAspects.DependencyInjection.PropertyDependencyInjector]
     property ItemRepository:LineItemRepository;
 
-    [aspect:PropertyDependencyInjector]
+    [aspect:RemObjects.Elements.StandardAspects.DependencyInjection.PropertyDependencyInjector]
     property InvoiceRepository:InvoiceRepository;
 
     method GetAllInvoices:List<Invoice>;
